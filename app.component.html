@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>calculator</title>
+</head>
+<body>
+  <div >
+    <h1>Calculator</h1>
+  <label>First Number:           </label>
+  <input type="number" id="firstNumber" placeholder="Enter first number      " [(ngModel)]="firstNumber"/>
+  <br>
+  <br>
+  <label>Second Number</label>
+  <input type="number" id="secondNumber" placeholder="Entersecond number     " [(ngModel)]="secondNumber"/>
+  <br>
+  <br>
+  <label>Result:     </label>
+  <input type="number" placeholder="Result"[(ngModel)]="result"/>
+  <button type="submit" (click)="add()">Add</button>
+  <button type="submit" (click)="sub()">Sub</button>
+  <button type="submit" (click)="mul()">Mul</button>
+  <button type="submit" (click)="div()">Div</button>
+
+  
+  <br>
+  <br>
+</div>
+  
+</body>
+</html>
